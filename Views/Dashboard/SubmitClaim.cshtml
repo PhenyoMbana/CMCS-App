@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Submit Claim";
+}
+
+<div class="container">
+    <h2>Submit Claim</h2>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="claimDetails">Claim Details:</label>
+            <textarea id="claimDetails" name="claimDetails" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="supportingDocument">Upload Supporting Document:</label>
+            <input type="file" id="supportingDocument" name="supportingDocument" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Claim</button>
+    </form>
+    <br />
+    <a href="@Url.Action("LecturerDashboard", "Dashboard")" class="btn btn-secondary">Back to Dashboard</a>
+</div>

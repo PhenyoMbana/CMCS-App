@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Manager Dashboard";
+}
+
+<div class="container">
+    <h2>Manager Dashboard</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("ViewPendingClaims", "Dashboard")" class="btn btn-primary">View Submitted Claims</a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("ApproveClaims", "Dashboard")" class="btn btn-success">Approve Claims</a>
+        </div>
+    </div>
+    <br />
+    <a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Logout</a>
+</div>

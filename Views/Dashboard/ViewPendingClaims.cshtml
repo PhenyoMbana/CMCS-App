@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "View Pending Claims";
+}
+
+<div class="container">
+    <h2>View Pending Claims</h2>
+    <!-- Add content here to display the list of claims and their statuses -->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Details</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example rows -->
+            <tr>
+                <td>1</td>
+                <td>Claim details here</td>
+                <td>Pending</td>
+                <td><a href="@Url.Action("ApproveClaim", "Dashboard", new { id = 1 })" class="btn btn-success">Approve</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <a href="@Url.Action("ManagerDashboard", "Dashboard")" class="btn btn-secondary">Back to Dashboard</a>
+</div>

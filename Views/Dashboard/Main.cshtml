@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Main Dashboard";
+}
+
+<div class="container">
+    <h2>Main Dashboard</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("ManagerDashboard", "Dashboard")" class="btn btn-primary">Manager Dashboard</a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("LecturerDashboard", "Dashboard")" class="btn btn-primary">Lecturer Dashboard</a>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <a href="@Url.Action("ViewPendingClaims", "Dashboard")" class="btn btn-secondary">View Pending Claims</a>
+        </div>
+        <div class="col-md-6">
+            <a href="@Url.Action("SubmitClaim", "Dashboard")" class="btn btn-secondary">Submit New Claim</a>
+        </div>
+    </div>
+    <br />
+    <a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Logout</a>
+</div>
